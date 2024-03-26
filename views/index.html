@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sofian Syed">
+    <meta name="description" content="Lab 1 for 250">
+    <meta name="keywords" content="HTML, CSS, JavaScript, PHP">
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer src="../static/script.js"></script>
+    <title>Sofian's Personal Website</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1 id="webname">Sofian Syed</h1>
+        <button id="SeeMoreBTN" onclick="showList()">Click to see...</button>
+        <nav id="myTopnav" class="topnav">
+            <ul>
+                <a href="index.html" class="active">Home</a>
+                <a href="cv.html">CV</a>
+                <a href="contact.html">Contact Me</a>
+                <a href="fun.html">For fun</a>
+                <a href="javascript:void(0);" class="icon" >
+                    <i class="fa fa-bars"></i>
+                </a>
+                <a href="javascript:void(0);" class="icon">
+                    <i class="fa fa-bars" onclick="activeNav()"></i>
+                </a>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="main">
+        <h2 id="greeting">Hi, my name is Sofian</h2>
+        <img class="classA" src="../static/pic_of_me.jpeg" alt="Sofian Syed profile image" width="350px">
+        <div class="classA">
+            <!-- <p id="intro">
+                I am a student at the Carnegie Mellon University. I am currently in my 2nd year
+            </p> -->
+            <div class="classA">
+                <span id="shortIntro">I am a student at the Carnegie Mellon University.</span>
+                <span id="readMore"> read more ...</span>
+                <span id="longIntro">I am currently in my 2nd year.</span>
+                <span id="readLess"> read less</span>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p id="copyYear">
+            Sofian Syed &copy;
+        </p>
+    </footer>
+
+    <body onload=" addYear()"></body>
+
+</body>
+</html>
